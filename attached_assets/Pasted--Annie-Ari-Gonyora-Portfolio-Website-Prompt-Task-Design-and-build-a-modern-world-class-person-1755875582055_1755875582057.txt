@@ -1,0 +1,142 @@
+🌍 Annie (Ari) Gonyora Portfolio Website Prompt
+
+Task:
+Design and build a modern, world-class personal portfolio website for Annie (Ari) Gonyora, a Zimbabwean changemaker, mother of 3, visionary leader, fashion designer, and Minister of Education at the Marine Foundation. The portfolio should showcase her story, achievements, leadership, projects, and partnerships with a professional, creative, and inspiring UI/UX.
+
+🎨 Design & Branding
+
+Style: Clean, modern, professional, elegant, bold, and African-inspired.
+
+Color Palette: Darker base with Zimbabwean flag colors (green, gold, red, black, white) used minimally for highlights. Avoid being too bright or busy.
+
+Typography: Use premium, modern fonts (pair a clean sans-serif for body text with a bold serif or elegant display font for headings).
+
+Imagery:
+
+Replace floating emojis with real photos of Annie (provided) and African cultural/impact visuals.
+
+Include professional event photos (moderations, networking, partnerships).
+
+Showcase global collaborations and African roots.
+
+Mood: Inspirational, empowering, innovative, and trustworthy.
+
+📑 Website Sections
+1. Hero Section
+
+Large, professional portrait of Annie.
+
+Powerful tagline:
+“Annie (Ari) Gonyora – Weaving Impact Across Continents”
+
+Short introduction highlighting her roles: Minister of Education (Marine Foundation), Continent Lead Africa (Mpowa), Co-Founder of 1Million&1, Fashion Visionary, AI & Education Advocate.
+
+Call-to-Action buttons: View My Work, Contact Me.
+
+2. About Me / Story
+
+Warm personal story introducing her as a mother of 3, African changemaker, and global innovator.
+
+Blend personal touch with professional excellence.
+
+Include Farm-to-School Project in Dubai, Borrowed Bestie, SewHerSpace, AnnieG Couture, and journey into leadership roles.
+
+3. Leadership & Impact
+
+Highlight her roles and leadership positions:
+
+Minister of Education – Marine Foundation (with official statement and announcement images).
+
+Continent Lead – Mpowa DAO.
+
+Co-Founder & Visionary – 1Million&1 (with daughter).
+
+Founder – Borrowed Bestie.
+
+Director – Bulawayo Board of Designers.
+
+Add logos of these organizations with clickable links.
+
+Visual timeline or infographic for clarity.
+
+4. Projects & Initiatives
+
+SewHerSpace – empowering women through fashion.
+
+1Million&1 – youth education & empowerment program.
+
+Farm-to-School (Dubai) – healthy eating in schools.
+
+AI Certifications & Advocacy – showcasing Annie as an early adopter in innovation.
+
+5. Events & Moderations
+
+Dedicated section for major events moderated with pictures:
+
+Funders & Fundees Dubai Dialogue & Fund Launch.
+
+Global Wealth Forum Host Country Announcement.
+
+MSF Atelier Brand Relaunch.
+
+Professional layout with event posters and Annie speaking.
+
+6. Testimonials
+
+Quotes and endorsements from partners, mentors, and collaborators (Farouk Khailann, Ambassador P Dunston, organizations she worked with).
+
+7. Media & Recognition
+
+Articles, features, interviews, press releases.
+
+The Marine Foundation Minister of Education announcement.
+
+8. Gallery / Creative Excellence
+
+Visual gallery showcasing Annie in action: fashion designs, events, leadership moments, networking photos.
+
+Inspired by Website 2’s "Creative Excellence" section.
+
+9. Numbers & Achievements
+
+Use dynamic counters for:
+
+Youth mentored.
+
+Women empowered.
+
+Events moderated.
+(Since numbers are still growing, keep this flexible with “+” or “and counting…”)
+
+10. Contact & Partnerships
+
+Contact form.
+
+Links to social media (LinkedIn, Instagram, Twitter).
+
+Organization links: Mpowa.io, 1gen.io, Marine Foundation.
+
+🛠️ Features & UX
+
+Fully responsive (desktop, tablet, mobile).
+
+Smooth scrolling, animations, and interactive sections.
+
+Professional dark/light toggle mode.
+
+Use subtle African patterns/textures in the background for authenticity.
+
+Integrate AI-inspired accents in design (e.g., futuristic glowing lines, minimal gradients).
+
+✨ Extra Touches
+
+Animated section for Impact in Motion (inspired by Website 2).
+
+Add Strategic Excellence section including Artificial Intelligence, Innovation, Leadership, and Education.
+
+Professional resume/CV download button.
+
+Integration with LinkedIn profile.
+
+⚡ Final Note for AI Tool:
+Use the reference images, logos, and event posters provided to design a visually striking, modern, and professional portfolio that reflects Annie’s multi-faceted leadership, African heritage, and global impact.
