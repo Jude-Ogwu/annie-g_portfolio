@@ -111,6 +111,31 @@
   .glow {
     animation: glow 2s ease-in-out infinite alternate;
   }
+  
+  .section-separator {
+    background: linear-gradient(90deg, transparent, var(--zim-gold), transparent);
+    height: 2px;
+    margin: 0 auto;
+    width: 80%;
+    opacity: 0.3;
+  }
+  
+  .section-separator-dot {
+    position: relative;
+  }
+  
+  .section-separator-dot::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background: var(--zim-gold);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  }
 }
 
 @keyframes fadeIn {
