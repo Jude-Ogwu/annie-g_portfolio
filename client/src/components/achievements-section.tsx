@@ -40,7 +40,7 @@ export default function AchievementsSection() {
           animateCounters();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     if (sectionRef.current) {
@@ -48,14 +48,15 @@ export default function AchievementsSection() {
     }
 
     return () => observer.disconnect();
-  }, [isVisible]);
+  }, []);
 
   const animateCounters = () => {
     achievements.forEach((achievement, index) => {
       let start = 0;
       const end = achievement.number;
-      const duration = 2000;
-      const increment = end / (duration / 50);
+      const duration = 2000; // 2 seconds
+      const steps = 60; // 60 steps for smooth animation
+      const increment = end / steps;
 
       const timer = setInterval(() => {
         start += increment;
@@ -73,7 +74,7 @@ export default function AchievementsSection() {
             return newCounts;
           });
         }
-      }, 50);
+      }, duration / steps);
     });
   };
 
@@ -90,21 +91,21 @@ export default function AchievementsSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {achievements.map((achievement, index) => (
             <div 
               key={index} 
-              className="bg-white/10 backdrop-blur-lg rounded-lg p-8 hover-lift"
+              className="bg-white/10 backdrop-blur-lg rounded-lg p-8 hover-lift transform hover:scale-105 transition-all duration-300"
               data-testid={`card-achievement-${index}`}
             >
               <div 
-                className="text-5xl font-bold mb-2"
+                className="text-4xl lg:text-5xl font-bold mb-2 text-white"
                 data-testid={`text-count-${index}`}
               >
                 {counts[index]?.toLocaleString() || 0}{achievement.suffix}
               </div>
-              <div className="text-xl font-medium opacity-90">{achievement.label}</div>
-              <p className="text-sm opacity-75 mt-2">{achievement.description}</p>
+              <div className="text-lg font-medium opacity-90 mb-2">{achievement.label}</div>
+              <p className="text-sm opacity-75">{achievement.description}</p>
             </div>
           ))}
         </div>

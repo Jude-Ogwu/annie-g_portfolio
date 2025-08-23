@@ -104,12 +104,12 @@ export default function GallerySection() {
                 alt={image.alt}
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
-                  <span className="inline-block px-2 py-1 bg-zim-gold/80 text-charcoal rounded text-xs font-medium mb-2">
+                  <span className="inline-block px-3 py-2 bg-zim-gold text-charcoal rounded-md text-sm font-bold mb-3 shadow-lg">
                     {image.category}
                   </span>
-                  <p className="text-sm font-medium">{image.alt}</p>
+                  <p className="text-sm font-semibold bg-black/50 backdrop-blur-sm px-3 py-2 rounded-md shadow-lg">{image.alt}</p>
                 </div>
               </div>
             </div>
