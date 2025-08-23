@@ -216,6 +216,13 @@ export default function ContactSection() {
                 <p className="mb-4 opacity-90">Download my comprehensive CV for detailed information</p>
                 <Button 
                   className="bg-white text-zim-green hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                  onClick={() => {
+                    // Create a downloadable PDF resume
+                    const link = document.createElement('a');
+                    link.href = '#'; // Would be replaced with actual PDF URL
+                    link.download = 'Annie-Gonyora-Resume.pdf';
+                    link.click();
+                  }}
                   data-testid="button-download-resume"
                 >
                   <FileText className="w-4 h-4 mr-2" />

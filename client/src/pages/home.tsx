@@ -5,6 +5,9 @@ import LeadershipSection from "@/components/leadership-section";
 import ProjectsSection from "@/components/projects-section";
 import EventsSection from "@/components/events-section";
 import AchievementsSection from "@/components/achievements-section";
+import MediaSection from "@/components/media-section";
+import GallerySection from "@/components/gallery-section";
+import StrategicExcellenceSection from "@/components/strategic-excellence-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
@@ -25,6 +28,12 @@ export default function Home() {
       <EventsSection />
       <SectionSeparator />
       <AchievementsSection />
+      <SectionSeparator />
+      <MediaSection />
+      <SectionSeparator />
+      <GallerySection />
+      <SectionSeparator />
+      <StrategicExcellenceSection />
       <SectionSeparator />
       <TestimonialsSection />
       <SectionSeparator />
