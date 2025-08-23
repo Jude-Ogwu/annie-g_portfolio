@@ -10,7 +10,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center african-pattern">
+    <section id="hero" className="relative min-h-screen flex items-center african-pattern pt-24 pb-16 sm:pt-28 sm:pb-20">
       <div className="absolute inset-0 bg-gradient-to-br from-charcoal/80 via-charcoal/60 to-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Mobile-first layout */}
