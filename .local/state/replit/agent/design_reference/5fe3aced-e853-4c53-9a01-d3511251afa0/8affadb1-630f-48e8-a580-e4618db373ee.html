@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie (Ari) Gonyora - Weaving Impact Across Continents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'zim-green': '#228B22',
+                        'zim-gold': '#FFD700',
+                        'zim-red': '#DC143C',
+                        'charcoal': '#1a1a1a',
+                        'charcoal-light': '#2a2a2a'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'glow': 'glow 2s ease-in-out infinite alternate'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+            to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.8); }
+        }
+        .african-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23228B22' fill-opacity='0.05'%3E%3Cpath d='M30 30l15-15v30l-15-15zm0 0l-15 15h30l-15-15z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFD700, #228B22);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .dark .dark\:bg-charcoal { background-color: #1a1a1a; }
+        .dark .dark\:bg-charcoal-light { background-color: #2a2a2a; }
+        .dark .dark\:text-gray-300 { color: #d1d5db; }
+    </style>
+</head>
+<body class="bg-white dark:bg-charcoal text-gray-900 dark:text-white font-sans transition-colors duration-300">
+
+    <!-- @COMPONENT: Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-charcoal/90 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-serif font-bold gradient-text">Annie Gonyora</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-zim-gold transition-colors">About</a>
+                    <a href="#leadership" class="hover:text-zim-gold transition-colors">Leadership</a>
+                    <a href="#projects" class="hover:text-zim-gold transition-colors">Projects</a>
+                    <a href="#events" class="hover:text-zim-gold transition-colors">Events</a>
+                    <a href="#contact" class="hover:text-zim-gold transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-sun dark:hidden"></i>
+                        <i class="fas fa-moon hidden dark:inline"></i>
+                    </button>
+                    <button class="md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="relative min-h-screen flex items-center african-pattern">
+        <div class="absolute inset-0 bg-gradient-to-br from-charcoal/80 via-charcoal/60 to-transparent"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 animate-fade-in">
+                    <div class="inline-block px-4 py-2 bg-zim-gold/20 text-zim-gold rounded-full text-sm font-medium mb-6">
+                        Minister of Education • Changemaker • Visionary Leader
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-serif font-bold mb-6 leading-tight">
+                        <span class="gradient-text">Weaving Impact</span><br>
+                        Across Continents
+                    </h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        Zimbabwean changemaker, mother of 3, and global innovator bridging education, technology, and empowerment. 
+                        From fashion visionary to AI advocate, I'm dedicated to creating sustainable impact across Africa and beyond.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="px-8 py-4 bg-zim-green hover:bg-zim-green/80 text-white rounded-lg font-semibold hover-lift transition-all duration-300">
+                            <i class="fas fa-eye mr-2"></i>View My Work
+                        </button>
+                        <button class="px-8 py-4 border-2 border-zim-gold text-zim-gold hover:bg-zim-gold hover:text-charcoal rounded-lg font-semibold transition-all duration-300">
+                            <i class="fas fa-envelope mr-2"></i>Contact Me
+                        </button>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 flex justify-center animate-slide-up">
+                    <!-- Professional portrait of Annie Gonyora with African cultural backdrop -->
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-zim-gold to-zim-green rounded-full blur-3xl opacity-30 animate-glow"></div>
+                        <img src="https://pixabay.com/get/g72d90bb6e666a617730ed2ba40922a7d470e07a6ef76d0a4d04d24e864bd0cba34ffca4b598af3ff6b3542f5d812d64cfd1da37a361e7418c1033e1ac0a75db5_1280.jpg" 
+                             alt="Annie Gonyora Professional Portrait" 
+                             class="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-zim-gold/50 shadow-2xl" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: About Me Section -->
+    <section id="about" class="py-20 bg-gray-50 dark:bg-charcoal-light">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6 gradient-text">My Story</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+                    From the heart of Zimbabwe to global stages, my journey weaves together motherhood, innovation, 
+                    and an unwavering commitment to empowering communities through education and entrepreneurship.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="prose prose-lg dark:prose-invert">
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            As a mother of three beautiful children, I understand the profound responsibility we have to create 
+                            a better world for the next generation. This personal mission drives my professional endeavors across 
+                            education, technology, and social impact.
+                        </p>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            My journey began in fashion design with AnnieG Couture and SewHerSpace, empowering women through 
+                            creative entrepreneurship. This evolved into the Farm-to-School Project in Dubai, promoting healthy 
+                            eating in educational institutions, and later to founding 1Million&1 with my daughter.
+                        </p>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Today, as Minister of Education at the Marine Foundation and Continent Lead for Mpowa DAO, I'm at 
+                            the forefront of educational innovation and AI advocacy, ensuring Africa's voice is heard in the 
+                            global conversation about the future of learning.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Annie working with children on education project -->
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                         alt="Education Workshop" 
+                         class="rounded-lg shadow-lg hover-lift" />
+                    <!-- Annie at a professional networking event -->
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                         alt="Professional Networking" 
+                         class="rounded-lg shadow-lg hover-lift" />
+                    <!-- Fashion design workspace showing African-inspired designs -->
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                         alt="Fashion Design Studio" 
+                         class="rounded-lg shadow-lg hover-lift" />
+                    <!-- Technology and innovation workspace -->
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                         alt="Innovation Workshop" 
+                         class="rounded-lg shadow-lg hover-lift" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Me Section -->
+
+    <!-- @COMPONENT: Leadership & Impact Section -->
+    <section id="leadership" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6 gradient-text">Leadership & Impact</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Leading transformative initiatives across education, technology, and social impact with strategic vision and cultural authenticity.
+                </p>
+            </div>
+
+            <!-- Interactive Timeline -->
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-zim-gold to-zim-green"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Minister of Education - Marine Foundation -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <div class="bg-white dark:bg-charcoal-light rounded-lg p-6 shadow-lg hover-lift">
+                                <h3 class="text-xl font-bold text-zim-green mb-2">Minister of Education</h3>
+                                <p class="text-gray-600 dark:text-gray-300 font-medium">Marine Foundation</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Leading educational innovation and policy development</p>
+                            </div>
+                        </div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-zim-gold rounded-full border-4 border-white dark:border-charcoal shadow-lg"></div>
+                        </div>
+                        <div class="w-5/12 pl-8">
+                            <!-- Logo placeholder for Marine Foundation -->
+                            <div class="bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900 rounded-lg p-4 text-center">
+                                <i class="fas fa-graduation-cap text-3xl text-blue-600 dark:text-blue-300"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Continent Lead - Mpowa DAO -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <!-- Logo placeholder for Mpowa -->
+                            <div class="bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-900 rounded-lg p-4 text-center">
+                                <i class="fas fa-globe-africa text-3xl text-purple-600 dark:text-purple-300"></i>
+                            </div>
+                        </div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-zim-green rounded-full border-4 border-white dark:border-charcoal shadow-lg"></div>
+                        </div>
+                        <div class="w-5/12 pl-8">
+                            <div class="bg-white dark:bg-charcoal-light rounded-lg p-6 shadow-lg hover-lift">
+                                <h3 class="text-xl font-bold text-zim-green mb-2">Continent Lead Africa</h3>
+                                <p class="text-gray-600 dark:text-gray-300 font-medium">Mpowa DAO</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Driving blockchain and Web3 adoption across Africa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Co-Founder - 1Million&1 -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <div class="bg-white dark:bg-charcoal-light rounded-lg p-6 shadow-lg hover-lift">
+                                <h3 class="text-xl font-bold text-zim-green mb-2">Co-Founder & Visionary</h3>
+                                <p class="text-gray-600 dark:text-gray-300 font-medium">1Million&1</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Youth education & empowerment with my daughter</p>
+                            </div>
+                        </div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-zim-red rounded-full border-4 border-white dark:border-charcoal shadow-lg"></div>
+                        </div>
+                        <div class="w-5/12 pl-8">
+                            <!-- Logo placeholder for 1Million&1 -->
+                            <div class="bg-gradient-to-br from-red-100 to-red-200 dark:from-red-800 dark:to-red-900 rounded-lg p-4 text-center">
+                                <i class="fas fa-users text-3xl text-red-600 dark:text-red-300"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Director - Bulawayo Board of Designers -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <!-- Logo placeholder for Bulawayo Board -->
+                            <div class="bg-gradient-to-br from-green-100 to-green-200 dark:from-green-800 dark:to-green-900 rounded-lg p-4 text-center">
+                                <i class="fas fa-palette text-3xl text-green-600 dark:text-green-300"></i>
+                            </div>
+                        </div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-zim-gold rounded-full border-4 border-white dark:border-charcoal shadow-lg"></div>
+                        </div>
+                        <div class="w-5/12 pl-8">
+                            <div class="bg-white dark:bg-charcoal-light rounded-lg p-6 shadow-lg hover-lift">
+                                <h3 class="text-xl font-bold text-zim-green mb-2">Director</h3>
+                                <p class="text-gray-600 dark:text-gray-300 font-medium">Bulawayo Board of Designers</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Promoting African design excellence globally</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Leadership & Impact Section -->
+
+    <!-- @COMPONENT: Projects & Initiatives Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-charcoal-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6 gradient-text">Projects & Initiatives</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Transformative projects spanning fashion, education, technology, and social impact across continents.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- SewHerSpace -->
+                <div class="bg-white dark:bg-charcoal rounded-lg overflow-hidden shadow-lg hover-lift group">
+                    <!-- Women working on fashion designs in collaborative workspace -->
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                         alt="SewHerSpace Fashion Empowerment" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-cut text-zim-gold mr-2"></i>
+                            <h3 class="text-xl font-bold">SewHerSpace</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Empowering women through fashion entrepreneurship, providing skills training and market access for sustainable livelihoods.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-zim-gold/20 text-zim-gold rounded-full text-sm">Fashion</span>
+                            <span class="px-3 py-1 bg-zim-green/20 text-zim-green rounded-full text-sm">Empowerment</span>
+                            <span class="px-3 py-1 bg-zim-red/20 text-zim-red rounded-full text-sm">Skills Training</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1Million&1 -->
+                <div class="bg-white dark:bg-charcoal rounded-lg overflow-hidden shadow-lg hover-lift group">
+                    <!-- Youth education and empowerment workshop scene -->
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                         alt="1Million&1 Youth Education Program" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-zim-green mr-2"></i>
+                            <h3 class="text-xl font-bold">1Million&1</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Co-founded with my daughter, this initiative focuses on youth education and empowerment through innovative learning approaches.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-zim-green/20 text-zim-green rounded-full text-sm">Education</span>
+                            <span class="px-3 py-1 bg-zim-gold/20 text-zim-gold rounded-full text-sm">Youth</span>
+                            <span class="px-3 py-1 bg-zim-red/20 text-zim-red rounded-full text-sm">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Farm-to-School Dubai -->
+                <div class="bg-white dark:bg-charcoal rounded-lg overflow-hidden shadow-lg hover-lift group">
+                    <!-- School nutrition program with fresh produce distribution -->
+                    <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                         alt="Farm-to-School Healthy Eating Initiative" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-seedling text-zim-green mr-2"></i>
+                            <h3 class="text-xl font-bold">Farm-to-School Dubai</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Pioneering healthy eating initiatives in Dubai schools, connecting local agriculture with educational nutrition programs.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-zim-green/20 text-zim-green rounded-full text-sm">Health</span>
+                            <span class="px-3 py-1 bg-zim-gold/20 text-zim-gold rounded-full text-sm">Education</span>
+                            <span class="px-3 py-1 bg-zim-red/20 text-zim-red rounded-full text-sm">Sustainability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Certifications & Advocacy -->
+                <div class="bg-white dark:bg-charcoal rounded-lg overflow-hidden shadow-lg hover-lift group">
+                    <!-- AI and technology innovation workspace -->
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                         alt="AI Innovation and Technology Advocacy" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-robot text-zim-gold mr-2"></i>
+                            <h3 class="text-xl font-bold">AI Certifications & Advocacy</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Leading AI adoption and education advocacy, ensuring Africa's voice in global technology conversations and innovation.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-zim-gold/20 text-zim-gold rounded-full text-sm">AI</span>
+                            <span class="px-3 py-1 bg-zim-green/20 text-zim-green rounded-full text-sm">Innovation</span>
+                            <span class="px-3 py-1 bg-zim-red/20 text-zim-red rounded-full text-sm">Advocacy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Projects & Initiatives Section -->
+
+    <!-- @COMPONENT: Events & Moderations Section -->
+    <section id="events" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6 gradient-text">Events & Moderations</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Leading conversations and moderating high-impact events that shape the future of education, technology, and African development.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Global Wealth Forum -->
+                <div class="bg-white dark:bg-charcoal rounded-lg overflow-hidden shadow-lg hover-lift group">
+                    <!-- Professional conference scene with Annie moderating panel -->
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="Global Wealth Forum Host Country Announcement" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Global Wealth Forum</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Host Country Announcement</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">
+                            Moderated the prestigious announcement ceremony, facilitating discussions on Africa's economic potential.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Funders & Fundees Dubai -->
+                <div class="bg-white dark:bg-charcoal rounded-lg overflow-hidden shadow-lg hover-lift group">
+                    <!-- Dubai business conference with networking and funding discussions -->
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="Funders & Fundees Dubai Dialogue & Fund Launch" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Funders & Fundees Dubai</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Dialogue & Fund Launch</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">
+                            Facilitated crucial conversations between investors and entrepreneurs, launching new funding initiatives.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- MSF Atelier Brand Relaunch -->
+                <div class="bg-white dark:bg-charcoal rounded-lg overflow-hidden shadow-lg hover-lift group">
+                    <!-- Fashion and design event showcasing African creativity -->
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+                         alt="MSF Atelier Brand Relaunch Event" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">MSF Atelier</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Brand Relaunch</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">
+                            Led the strategic relaunch of MSF Atelier, elevating African fashion and design on the global stage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Events & Moderations Section -->
+
+    <!-- @COMPONENT: Dynamic Achievements Counter -->
+    <section class="py-20 bg-gradient-to-br from-zim-green to-zim-gold text-white african-pattern">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6">Impact in Numbers</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Measurable impact across communities, continuously growing and evolving with each initiative.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-8 hover-lift">
+                    <div class="text-5xl font-bold mb-2" data-count="500">0</div>
+                    <div class="text-xl font-medium opacity-90">Youth Mentored+</div>
+                    <p class="text-sm opacity-75 mt-2">Through 1Million&1 and educational programs</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-8 hover-lift">
+                    <div class="text-5xl font-bold mb-2" data-count="250">0</div>
+                    <div class="text-xl font-medium opacity-90">Women Empowered+</div>
+                    <p class="text-sm opacity-75 mt-2">Via SewHerSpace and entrepreneurship initiatives</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-8 hover-lift">
+                    <div class="text-5xl font-bold mb-2" data-count="15">0</div>
+                    <div class="text-xl font-medium opacity-90">Major Events Moderated</div>
+                    <p class="text-sm opacity-75 mt-2">High-impact conferences and dialogue forums</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Dynamic Achievements Counter -->
+
+    <!-- @COMPONENT: Testimonials Section -->
+    <section class="py-20 bg-gray-50 dark:bg-charcoal-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6 gradient-text">What Leaders Say</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Endorsements from partners, collaborators, and leaders who've witnessed the transformative impact of our work.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white dark:bg-charcoal rounded-lg p-6 shadow-lg hover-lift">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-zim-gold text-2xl mr-3"></i>
+                        <div class="flex text-zim-gold">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4 italic">
+                        "Annie's vision for African education and her commitment to innovation make her an exceptional leader. 
+                        Her work with the Marine Foundation is transforming how we approach learning across the continent."
+                    </p>
+                    <div class="flex items-center">
+                        <!-- Professional headshot of testimonial provider -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
+                             alt="Farouk Khailann" 
+                             class="w-12 h-12 rounded-full object-cover mr-3" />
+                        <div>
+                            <div class="font-semibold" data-mock="true">Farouk Khailann</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Education Leader</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white dark:bg-charcoal rounded-lg p-6 shadow-lg hover-lift">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-zim-gold text-2xl mr-3"></i>
+                        <div class="flex text-zim-gold">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4 italic">
+                        "Working with Annie on the Global Wealth Forum was inspiring. Her ability to moderate complex discussions 
+                        while maintaining cultural sensitivity and professional excellence is remarkable."
+                    </p>
+                    <div class="flex items-center">
+                        <!-- Professional headshot of testimonial provider -->
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
+                             alt="Ambassador P Dunston" 
+                             class="w-12 h-12 rounded-full object-cover mr-3" />
+                        <div>
+                            <div class="font-semibold" data-mock="true">Ambassador P Dunston</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Diplomatic Leader</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white dark:bg-charcoal rounded-lg p-6 shadow-lg hover-lift">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-zim-gold text-2xl mr-3"></i>
+                        <div class="flex text-zim-gold">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4 italic">
+                        "Annie's entrepreneurial spirit and dedication to empowering women through SewHerSpace has created 
+                        lasting change in our community. She's a true changemaker."
+                    </p>
+                    <div class="flex items-center">
+                        <!-- Professional headshot of testimonial provider -->
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
+                             alt="Community Leader" 
+                             class="w-12 h-12 rounded-full object-cover mr-3" />
+                        <div>
+                            <div class="font-semibold" data-mock="true">Dr. Sarah Mbeki</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Community Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials Section -->
+
+    <!-- @COMPONENT: Contact & Partnerships Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6 gradient-text">Let's Connect</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300">
+                        Ready to collaborate on transformative initiatives? Let's explore how we can create lasting impact together.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-white dark:bg-charcoal-light rounded-lg p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <input type="text" placeholder="First Name" 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-charcoal focus:ring-2 focus:ring-zim-gold focus:border-transparent transition-all duration-300" />
+                                <input type="text" placeholder="Last Name" 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-charcoal focus:ring-2 focus:ring-zim-gold focus:border-transparent transition-all duration-300" />
+                            </div>
+                            <input type="email" placeholder="Email Address" 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-charcoal focus:ring-2 focus:ring-zim-gold focus:border-transparent transition-all duration-300" />
+                            <input type="text" placeholder="Subject" 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-charcoal focus:ring-2 focus:ring-zim-gold focus:border-transparent transition-all duration-300" />
+                            <textarea rows="5" placeholder="Your Message" 
+                                      class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-charcoal focus:ring-2 focus:ring-zim-gold focus:border-transparent transition-all duration-300"></textarea>
+                            <button type="submit" 
+                                    class="w-full px-8 py-4 bg-gradient-to-r from-zim-green to-zim-gold text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information & Links -->
+                    <div class="space-y-8">
+                        <!-- Professional Links -->
+                        <div class="bg-white dark:bg-charcoal-light rounded-lg p-6 shadow-lg">
+                            <h4 class="text-xl font-bold mb-4">Professional Networks</h4>
+                            <div class="space-y-4">
+                                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group" data-implementation="LinkedIn profile link">
+                                    <i class="fab fa-linkedin text-2xl text-blue-600 mr-4 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <div class="font-medium">LinkedIn</div>
+                                        <div class="text-sm text-gray-500 dark:text-gray-400">Professional networking</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors group" data-implementation="Instagram profile link">
+                                    <i class="fab fa-instagram text-2xl text-pink-600 mr-4 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <div class="font-medium">Instagram</div>
+                                        <div class="text-sm text-gray-500 dark:text-gray-400">Behind the scenes</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group" data-implementation="Twitter profile link">
+                                    <i class="fab fa-twitter text-2xl text-blue-400 mr-4 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <div class="font-medium">Twitter</div>
+                                        <div class="text-sm text-gray-500 dark:text-gray-400">Thought leadership</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Organization Links -->
+                        <div class="bg-white dark:bg-charcoal-light rounded-lg p-6 shadow-lg">
+                            <h4 class="text-xl font-bold mb-4">Organizations</h4>
+                            <div class="space-y-4">
+                                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors group" data-implementation="Marine Foundation link">
+                                    <i class="fas fa-graduation-cap text-2xl text-zim-green mr-4 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <div class="font-medium">Marine Foundation</div>
+                                        <div class="text-sm text-gray-500 dark:text-gray-400">Education innovation</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors group" data-implementation="Mpowa.io link">
+                                    <i class="fas fa-globe-africa text-2xl text-zim-gold mr-4 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <div class="font-medium">Mpowa.io</div>
+                                        <div class="text-sm text-gray-500 dark:text-gray-400">Blockchain & Web3</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors group" data-implementation="1gen.io link">
+                                    <i class="fas fa-users text-2xl text-zim-red mr-4 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <div class="font-medium">1gen.io</div>
+                                        <div class="text-sm text-gray-500 dark:text-gray-400">Youth empowerment</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Download Resume -->
+                        <div class="bg-gradient-to-br from-zim-green to-zim-gold rounded-lg p-6 text-white text-center">
+                            <i class="fas fa-download text-3xl mb-4"></i>
+                            <h4 class="text-xl font-bold mb-2">Professional Resume</h4>
+                            <p class="mb-4 opacity-90">Download my comprehensive CV for detailed information</p>
+                            <button class="px-6 py-3 bg-white text-zim-green rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300" data-implementation="PDF download functionality">
+                                <i class="fas fa-file-pdf mr-2"></i>Download PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact & Partnerships Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="text-3xl font-serif font-bold gradient-text mb-4">Annie (Ari) Gonyora</div>
+                <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
+                    Weaving impact across continents through education, innovation, and authentic leadership. 
+                    Together, we're building a more inclusive and empowered future for Africa and the world.
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-zim-gold transition-colors"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-zim-gold transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-zim-gold transition-colors"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-zim-gold transition-colors"><i class="fas fa-envelope text-2xl"></i></a>
+                </div>
+                <div class="border-t border-gray-700 pt-6">
+                    <p class="text-gray-500 text-sm">&copy; 2024 Annie Gonyora. All rights reserved. | Proudly Zimbabwean 🇿🇼</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        (function() {
+            // Dark mode toggle functionality
+            const themeToggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+
+            themeToggle.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                localStorage.setItem('dark-mode', html.classList.contains('dark'));
+            });
+
+            // Load saved theme
+            if (localStorage.getItem('dark-mode') === 'true') {
+                html.classList.add('dark');
+            }
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Animate counters when in view
+            const animateCounters = () => {
+                const counters = document.querySelectorAll('[data-count]');
+                
+                counters.forEach(counter => {
+                    const target = parseInt(counter.getAttribute('data-count'));
+                    const count = parseInt(counter.innerText);
+                    
+                    if (count < target) {
+                        const increment = target / 50;
+                        const newCount = Math.min(count + increment, target);
+                        counter.innerText = Math.floor(newCount);
+                        
+                        if (newCount < target) {
+                            setTimeout(() => animateCounters(), 50);
+                        }
+                    }
+                });
+            };
+
+            // Intersection Observer for counter animation
+            const counterSection = document.querySelector('[data-count]')?.closest('section');
+            if (counterSection) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounters();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(counterSection);
+            }
+
+            // Add scroll-based animations
+            const observeElements = () => {
+                const elements = document.querySelectorAll('.animate-fade-in, .animate-slide-up, .hover-lift');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                elements.forEach(el => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(20px)';
+                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    observer.observe(el);
+                });
+            };
+
+            // Initialize animations after DOM load
+            document.addEventListener('DOMContentLoaded', observeElements);
+        })();
+    </script>
+</body>
+</html>
