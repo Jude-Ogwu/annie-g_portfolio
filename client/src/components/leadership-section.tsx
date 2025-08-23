@@ -4,15 +4,15 @@ const timelineItems = [
   {
     title: "Minister of Education",
     organization: "Marine Foundation",
-    description: "Leading educational innovation and policy development",
+    description: "Leading global education reform initiatives focused on equity, empowerment, and opportunity for all children.",
     icon: GraduationCap,
     color: "zim-green",
     side: "right"
   },
   {
-    title: "Continent Lead Africa",
+    title: "Continent Lead (Africa)",
     organization: "Mpowa DAO",
-    description: "Driving blockchain and Web3 adoption across Africa",
+    description: "Driving blockchain-powered sustainable energy and youth empowerment projects across Africa.",
     icon: Globe,
     color: "zim-gold",
     side: "left"
@@ -20,18 +20,42 @@ const timelineItems = [
   {
     title: "Co-Founder & Visionary",
     organization: "1Million&1",
-    description: "Youth education & empowerment with my daughter",
+    description: "A bold initiative co-created with her daughter, Uzuri, to empower youth through skills in tech, creative arts, agriculture, and leadership.",
     icon: Users,
     color: "zim-red",
     side: "right"
   },
   {
-    title: "Director",
-    organization: "Bulawayo Board of Designers",
-    description: "Promoting African design excellence globally",
+    title: "Founder",
+    organization: "Borrowed Bestie",
+    description: "Mental health and awareness platform creating safe spaces for women and youth.",
     icon: Palette,
     color: "zim-green",
     side: "left"
+  },
+  {
+    title: "Founder & Designer",
+    organization: "AnnieG Couture",
+    description: "Award-winning fashion label promoting African design and creativity globally.",
+    icon: Palette,
+    color: "zim-gold",
+    side: "right"
+  },
+  {
+    title: "Founder & Director",
+    organization: "Bulawayo Board of Designers",
+    description: "Established to nurture and amplify Zimbabwean fashion talent.",
+    icon: Users,
+    color: "zim-red",
+    side: "left"
+  },
+  {
+    title: "Director of Strategic Education",
+    organization: "FirstNational Supermarket",
+    description: "Integrating innovative educational initiatives into corporate and retail systems.",
+    icon: GraduationCap,
+    color: "zim-green",
+    side: "right"
   }
 ];
 

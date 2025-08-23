@@ -1,38 +1,63 @@
-import { Scissors, Users, Sprout, Bot } from "lucide-react";
+import { useState } from "react";
+import { Scissors, Users, Sprout, Bot, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 const projects = [
   {
     title: "SewHerSpace",
-    description: "Empowering women through fashion entrepreneurship, providing skills training and market access for sustainable livelihoods.",
+    shortDesc: "A social impact accelerator empowering women through fashion...",
+    fullDescription: "A social impact accelerator and marketplace empowering women through fashion, enterprise, and leadership.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
     icon: Scissors,
-    tags: ["Fashion", "Empowerment", "Skills Training"]
+    tags: ["Fashion", "Empowerment", "Enterprise"],
+    link: "https://sewherspace.com"
   },
   {
     title: "1Million&1",
-    description: "Co-founded with my daughter, this initiative focuses on youth education and empowerment through innovative learning approaches.",
+    shortDesc: "Youth-focused program with mentorship and skills development...",
+    fullDescription: "A youth-focused program providing mentorship and skills development in technology, arts, agriculture, and leadership. Co-founded with her daughter, Uzuri, it represents intergenerational collaboration and empowerment.",
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
     icon: Users,
-    tags: ["Education", "Youth", "Innovation"]
+    tags: ["Education", "Youth", "Leadership"],
+    link: "https://1gen.io"
   },
   {
-    title: "Farm-to-School Dubai",
-    description: "Pioneering healthy eating initiatives in Dubai schools, connecting local agriculture with educational nutrition programs.",
+    title: "Farm-to-School (Dubai)",
+    shortDesc: "Healthy eating initiatives in Dubai schools...",
+    fullDescription: "Annie collaborated with Nature's Cart to promote healthy eating in schools across Dubai, introducing children to nutritious food choices while supporting local agribusiness.",
     image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
     icon: Sprout,
-    tags: ["Health", "Education", "Sustainability"]
+    tags: ["Health", "Education", "Sustainability"],
+    link: "#"
   },
   {
-    title: "AI Certifications & Advocacy",
-    description: "Leading AI adoption and education advocacy, ensuring Africa's voice in global technology conversations and innovation.",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
+    title: "Borrowed Bestie",
+    shortDesc: "Mental health awareness project for women and youth...",
+    fullDescription: "A mental health awareness project designed to help women and youth prioritize wellness and personal growth.",
+    image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
     icon: Bot,
-    tags: ["AI", "Innovation", "Advocacy"]
+    tags: ["Mental Health", "Wellness", "Youth"],
+    link: "https://borrowedbestie.one"
+  },
+  {
+    title: "AnnieG Couture",
+    shortDesc: "Fashion brand blending African heritage with modern design...",
+    fullDescription: "Fashion brand blending African heritage with modern design, earning Annie recognition as a leading creative in fashion innovation.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
+    icon: Scissors,
+    tags: ["Fashion", "African Heritage", "Innovation"],
+    link: "#"
   }
 ];
 
 export default function ProjectsSection() {
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
+
+  const toggleExpansion = (index: number) => {
+    setExpandedProject(expandedProject === index ? null : index);
+  };
+
   return (
     <section id="projects" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -46,10 +71,11 @@ export default function ProjectsSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const Icon = project.icon;
+            const isExpanded = expandedProject === index;
             return (
               <div 
                 key={index} 
-                className="bg-card rounded-lg overflow-hidden shadow-lg hover-lift group"
+                className="bg-card rounded-lg overflow-hidden shadow-lg hover-lift group transition-all duration-300"
                 data-testid={`card-project-${index}`}
               >
                 <img
@@ -59,12 +85,39 @@ export default function ProjectsSection() {
                   data-testid={`img-project-${index}`}
                 />
                 <div className="p-6">
-                  <div className="flex items-center mb-3">
-                    <Icon className="text-zim-gold mr-2" size={20} />
-                    <h3 className="text-xl font-bold">{project.title}</h3>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center">
+                      <Icon className="text-zim-gold mr-2" size={20} />
+                      <h3 className="text-xl font-bold">{project.title}</h3>
+                    </div>
+                    {project.link !== "#" && (
+                      <a 
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zim-gold hover:text-zim-green transition-colors"
+                        data-testid={`link-project-${index}`}
+                      >
+                        <ExternalLink size={16} />
+                      </a>
+                    )}
                   </div>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  
+                  <p className="text-muted-foreground mb-4 transition-all duration-300">
+                    {isExpanded ? project.fullDescription : project.shortDesc}
+                  </p>
+                  
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => toggleExpansion(index)}
+                    className="text-zim-gold hover:text-zim-green mb-4 p-0 h-auto font-medium"
+                    data-testid={`button-expand-${index}`}
+                  >
+                    {isExpanded ? 'Show Less' : 'Read More'}
+                  </Button>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
                       <Badge 
                         key={tagIndex} 
@@ -79,6 +132,17 @@ export default function ProjectsSection() {
                       </Badge>
                     ))}
                   </div>
+                  
+                  {project.link !== "#" && (
+                    <Button
+                      className="w-full bg-gradient-to-r from-zim-green to-zim-gold text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                      onClick={() => window.open(project.link, '_blank')}
+                      data-testid={`button-visit-${index}`}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Visit Project
+                    </Button>
+                  )}
                 </div>
               </div>
             );

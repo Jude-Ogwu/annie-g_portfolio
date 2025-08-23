@@ -2,19 +2,28 @@ import { useEffect, useRef, useState } from "react";
 
 const achievements = [
   {
-    number: 500,
+    number: 1500,
     label: "Youth Mentored+",
-    description: "Through 1Million&1 and educational programs"
+    description: "Through 1Million&1 and educational programs",
+    suffix: "+"
   },
   {
-    number: 250,
-    label: "Women Empowered+",
-    description: "Via SewHerSpace and entrepreneurship initiatives"
+    number: 800,
+    label: "Women Empowered+", 
+    description: "Via SewHerSpace and entrepreneurship initiatives",
+    suffix: "+"
   },
   {
-    number: 15,
-    label: "Major Events Moderated",
-    description: "High-impact conferences and dialogue forums"
+    number: 25,
+    label: "Major Events & Counting",
+    description: "High-impact conferences and dialogue forums",
+    suffix: "+"
+  },
+  {
+    number: 7,
+    label: "Organizations Founded",
+    description: "Creating lasting impact across sectors",
+    suffix: ""
   }
 ];
 
@@ -92,7 +101,7 @@ export default function AchievementsSection() {
                 className="text-5xl font-bold mb-2"
                 data-testid={`text-count-${index}`}
               >
-                {counts[index]}
+                {counts[index]?.toLocaleString() || 0}{achievement.suffix}
               </div>
               <div className="text-xl font-medium opacity-90">{achievement.label}</div>
               <p className="text-sm opacity-75 mt-2">{achievement.description}</p>

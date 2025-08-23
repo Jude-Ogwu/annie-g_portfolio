@@ -12,6 +12,7 @@ import TestimonialsSection from "@/components/testimonials-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import SectionSeparator from "@/components/section-separator";
+import BackToTop from "@/components/back-to-top";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <SectionSeparator />
       <ContactSection />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
