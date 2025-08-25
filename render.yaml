@@ -3,7 +3,7 @@ services:
     name: annie-gonyora
     runtime: node
     buildCommand: npm install && npm run build
-    startCommand: npm run start
+    startCommand: npm run dev
     envVars:
       - key: NODE_ENV
         value: production
