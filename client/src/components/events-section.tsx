@@ -3,19 +3,19 @@ const events = [
     title: "Global Wealth Forum",
     subtitle: "Host Country Announcement",
     description: "Moderated the prestigious announcement ceremony, facilitating discussions on Africa's economic potential.",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    image: "/event2.png"
   },
   {
     title: "Funders & Fundees Dubai",
     subtitle: "Dialogue & Fund Launch",
     description: "Facilitated crucial conversations between investors and entrepreneurs, launching new funding initiatives.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    image: "/ai_innovation.png"
   },
   {
     title: "MSF Atelier",
     subtitle: "Brand Relaunch",
     description: "Led the strategic relaunch of MSF Atelier, elevating African fashion and design on the global stage.",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    image: "/annie_gonyora5.png"
   }
 ];
 

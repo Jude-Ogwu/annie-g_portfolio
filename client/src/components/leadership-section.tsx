@@ -81,7 +81,7 @@ export default function LeadershipSection() {
                 <div key={index} className="flex items-center justify-between">
                   {item.side === "right" ? (
                     <>
-                      <div className="w-5/12 text-right pr-8">
+                      <div className="w-full sm:w-5/12 text-right pr-0 sm:pr-8">
                         <div className="bg-card rounded-lg p-6 shadow-lg hover-lift">
                           <h3 className={`text-xl font-bold text-${item.color} mb-2`}>{item.title}</h3>
                           <p className="text-muted-foreground font-medium">{item.organization}</p>
@@ -91,7 +91,7 @@ export default function LeadershipSection() {
                       <div className="w-2/12 flex justify-center">
                         <div className={`w-4 h-4 bg-${item.color} rounded-full border-4 border-background shadow-lg`}></div>
                       </div>
-                      <div className="w-5/12 pl-8">
+                      <div className="w-full sm:w-5/12 pl-0 sm:pl-8">
                         <div className={`bg-gradient-to-br from-${item.color}/10 to-${item.color}/20 rounded-lg p-4 text-center`}>
                           <Icon className={`text-3xl text-${item.color} mx-auto`} size={48} />
                         </div>
@@ -99,7 +99,7 @@ export default function LeadershipSection() {
                     </>
                   ) : (
                     <>
-                      <div className="w-5/12 text-right pr-8">
+                      <div className="w-full sm:w-5/12 text-right pr-0 sm:pr-8">
                         <div className={`bg-gradient-to-br from-${item.color}/10 to-${item.color}/20 rounded-lg p-4 text-center`}>
                           <Icon className={`text-3xl text-${item.color} mx-auto`} size={48} />
                         </div>
@@ -107,7 +107,7 @@ export default function LeadershipSection() {
                       <div className="w-2/12 flex justify-center">
                         <div className={`w-4 h-4 bg-${item.color} rounded-full border-4 border-background shadow-lg`}></div>
                       </div>
-                      <div className="w-5/12 pl-8">
+                      <div className="w-full sm:w-5/12 pl-0 sm:pl-8">
                         <div className="bg-card rounded-lg p-6 shadow-lg hover-lift">
                           <h3 className={`text-xl font-bold text-${item.color} mb-2`}>{item.title}</h3>
                           <p className="text-muted-foreground font-medium">{item.organization}</p>

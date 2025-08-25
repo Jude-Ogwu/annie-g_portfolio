@@ -10,17 +10,17 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center african-pattern pt-24 pb-16 sm:pt-28 sm:pb-20">
+    <section id="hero" className="relative min-h-screen flex items-center african-pattern pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-40">
       <div className="absolute inset-0 bg-gradient-to-br from-charcoal/80 via-charcoal/60 to-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Mobile-first layout */}
         <div className="text-center lg:text-left">
           {/* Profile Image - Mobile centered, Desktop right */}
-          <div className="flex justify-center lg:float-right lg:ml-12 mb-8 lg:mb-0 slide-up">
+          <div className="flex justify-center lg:float-right lg:ml-12 mb-8 lg:mb-0 lg:mr-16 slide-up">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-zim-gold to-zim-green rounded-full blur-3xl opacity-30 glow"></div>
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+                src="/annie_gonyora.png"
                 alt="Annie Gonyora Professional Portrait"
                 className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-zim-gold/50 shadow-2xl"
                 data-testid="img-hero-portrait"

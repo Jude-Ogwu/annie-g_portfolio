@@ -8,10 +8,10 @@ const projects = [
     title: "SewHerSpace",
     shortDesc: "A social impact accelerator empowering women through fashion...",
     fullDescription: "A social impact accelerator and marketplace empowering women through fashion, enterprise, and leadership.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
+    image: "/sew_her_space.png",
     icon: Scissors,
     tags: ["Fashion", "Empowerment", "Enterprise"],
-    link: "https://sewherspace.com"
+    link: "#"
   },
   {
     title: "1Million&1",
@@ -20,7 +20,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
     icon: Users,
     tags: ["Education", "Youth", "Leadership"],
-    link: "https://1gen.io"
+    link: "#"
   },
   {
     title: "Farm-to-School (Dubai)",
@@ -44,7 +44,7 @@ const projects = [
     title: "AnnieG Couture",
     shortDesc: "Fashion brand blending African heritage with modern design...",
     fullDescription: "Fashion brand blending African heritage with modern design, earning Annie recognition as a leading creative in fashion innovation.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
+    image: "/annie_gonyora5.png",
     icon: Scissors,
     tags: ["Fashion", "African Heritage", "Innovation"],
     link: "#"

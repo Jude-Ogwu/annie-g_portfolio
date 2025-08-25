@@ -32,25 +32,25 @@ export default function AboutSection() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+              src="/annie_gonyora1.png"
               alt="Education Workshop"
               className="rounded-lg shadow-lg hover-lift"
               data-testid="img-education-workshop"
             />
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+              src="/annie_gonyora2.png"
               alt="Professional Networking"
               className="rounded-lg shadow-lg hover-lift"
               data-testid="img-professional-networking"
             />
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+              src="/annie_gonyora4.png"
               alt="Fashion Design Studio"
               className="rounded-lg shadow-lg hover-lift"
               data-testid="img-fashion-studio"
             />
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+              src="/annie_gonyora6.png"
               alt="Innovation Workshop"
               className="rounded-lg shadow-lg hover-lift"
               data-testid="img-innovation-workshop"

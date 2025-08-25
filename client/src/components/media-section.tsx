@@ -7,7 +7,7 @@ const mediaItems = [
     date: "January 2024",
     type: "Press Release",
     description: "Official announcement of Annie's appointment as Minister of Education, highlighting her vision for transformational leadership.",
-    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+    image: "/annie_gonyora3.png",
     icon: Award
   },
   {
@@ -16,16 +16,16 @@ const mediaItems = [
     date: "November 2023",
     type: "Feature Article",
     description: "In-depth interview discussing Annie's role in advancing artificial intelligence adoption across African educational institutions.",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+    image: "/annie_gonyora6i.png",
     icon: ExternalLink
   },
   {
     title: "From Fashion to Global Leadership",
     publication: "African Women Leaders",
-    date: "September 2023",
+    date: "September 2016",
     type: "Profile Interview",
     description: "Exploring Annie's journey from fashion entrepreneur to global education leader and her impact on women's empowerment.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+    image: "/fashion_to_global.png",
     icon: Calendar
   }
 ];
@@ -53,7 +53,7 @@ export default function MediaSection() {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-300"
                   data-testid={`img-media-${index}`}
                 />
                 <div className="p-6">

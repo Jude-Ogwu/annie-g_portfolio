@@ -1,4 +1,5 @@
 import { Linkedin, Instagram, Twitter, Mail } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,7 +13,18 @@ export default function Footer() {
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a 
-              href="#" 
+              href="https://wa.me/971522853831"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-zim-gold transition-colors"
+              data-testid="link-footer-whatsapp"
+            >
+              <MessageCircle size={32} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/annie-gonyora-6641a1234/"
+              target="_blank"
+              rel="noopener noreferrer" 
               className="text-gray-400 hover:text-zim-gold transition-colors"
               data-testid="link-footer-linkedin"
             >
@@ -33,7 +45,7 @@ export default function Footer() {
               <Twitter size={32} />
             </a>
             <a 
-              href="#" 
+              href="mailto:gonyoraannie3@gmail.com" 
               className="text-gray-400 hover:text-zim-gold transition-colors"
               data-testid="link-footer-email"
             >

@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { Linkedin, Instagram, Twitter, GraduationCap, Globe, Users, Send, Download, FileText } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 interface ContactFormData {
   firstName: string;
@@ -134,7 +135,22 @@ export default function ContactSection() {
                 <h4 className="text-xl font-bold mb-4">Professional Networks</h4>
                 <div className="space-y-4">
                   <a 
-                    href="#" 
+                    href="https://wa.me/971522853831"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="flex items-center p-3 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors group"
+                    data-testid="link-whatsapp"
+                  >
+                    <MessageCircle className="text-2xl text-green-600 mr-4 group-hover:scale-110 transition-transform" size={32} />
+                    <div>
+                      <div className="font-medium">WhatsApp</div>
+                      <div className="text-sm text-muted-foreground">Socialize</div>
+                    </div>
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/in/annie-gonyora-6641a1234/"
+                    target="_blank"
+                    rel="noopener noreferrer" 
                     className="flex items-center p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group"
                     data-testid="link-linkedin"
                   >
@@ -185,7 +201,9 @@ export default function ContactSection() {
                     </div>
                   </a>
                   <a 
-                    href="#" 
+                    href="https://mpowa.io"
+                    target="_blank"
+                    rel="noopener noreferrer" 
                     className="flex items-center p-3 rounded-lg hover:bg-muted transition-colors group"
                     data-testid="link-mpowa"
                   >
@@ -196,7 +214,9 @@ export default function ContactSection() {
                     </div>
                   </a>
                   <a 
-                    href="#" 
+                    href="https://1gen.io" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center p-3 rounded-lg hover:bg-muted transition-colors group"
                     data-testid="link-1gen"
                   >

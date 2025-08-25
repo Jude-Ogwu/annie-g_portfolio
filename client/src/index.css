@@ -184,3 +184,30 @@
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
   }
 }
+/* Hide scrollbars but keep scroll functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;      /* IE/Edge */
+  scrollbar-width: none;         /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;                 /* Chrome/Safari */
+}
+/* ==== Marquee animation (reliable, no JS needed) ==== */
+@keyframes marquee-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* one full track width (because we render it twice) */
+}
+@keyframes marquee-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* base + direction + pause */
+.marquee { will-change: transform; }
+.marquee-left  { animation: marquee-left var(--marquee-duration, 45s) linear infinite; }
+.marquee-right { animation: marquee-right var(--marquee-duration, 45s) linear infinite; }
+.marquee-paused { animation-play-state: paused; }
+
+/* Hover pause for better UX (pause the row when user hovers anywhere on it) */
+.group:hover .marquee { animation-play-state: paused; }
+
