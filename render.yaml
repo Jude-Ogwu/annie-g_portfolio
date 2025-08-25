@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: annie-gonyora
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    plan: free
+    region: ohio
+    # Keep the service warm to avoid cold starts
+    preboot:
+      enabled: true
+      activeDeadlineSeconds: 10
+    healthCheckPath: /health 
